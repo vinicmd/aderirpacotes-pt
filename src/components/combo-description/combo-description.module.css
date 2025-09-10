@@ -1,0 +1,160 @@
+.comboContainer {
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+
+.priceSide {
+  display: flex;
+  width: 100%;
+}
+
+.namePrice {
+  padding: 25px 0 0 40px;
+  background-color: var(--color-leaf-green);
+  color: var(--color-white);
+  width: 400px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.priceTitle {
+  width: 100%;
+  padding: 0 40px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.namePrice h2 {
+  color: var(--color-white);
+  font-size: 22px;
+}
+
+.namePrice h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.namePrice .priceContainer {
+  font-size: 25px;
+}
+
+.priceContainer s {
+  color: var(--color-white);
+  font-size: 22px;
+  text-decoration: line-through;
+}
+
+.priceContainer span {
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.offers {
+  flex: 1;
+  height: 130px;
+  background-color: var(--color-musg-green);
+  display: flex;
+}
+
+.buttonContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonContainer div {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #000;
+  color: white;
+  border-radius: 0;
+  width: 200px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offerText {
+  max-width: 430px;
+  padding: 25px 0 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offers p {
+  font-size: 15px;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.beneficesSide {
+  display: flex;
+}
+
+.options {
+  background-color: var(--color-blue);
+  padding: 20px 0 20px 40px;
+  width: 400px;
+}
+
+.options p {
+  color: white;
+}
+
+.beneficies {
+  padding: 20px 0 20px 20px;
+  background-color: var(--color-light-blue);
+  flex: 1;
+  color: white;
+  max-width: 700px;
+  text-align: center;
+}
+.beneficies strong {
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .priceSide,
+  .beneficesSide,
+  .offers {
+    flex-direction: column;
+  }
+
+  .options {
+    width: 100%;
+    padding: 20px 0 20px 20px;
+  }
+
+  .offers {
+    height: 180px;
+    padding-bottom: 20px;
+  }
+
+  .offerText {
+    padding: 20px;
+  }
+
+  .namePrice {
+    width: 100%;
+  }
+
+  .namePrice h2 {
+    font-size: 22px;
+  }
+
+  .namePrice .priceContainer {
+    font-size: 25px;
+  }
+
+  .beneficies {
+    padding: 20px;
+    max-width: none;
+  }
+}
