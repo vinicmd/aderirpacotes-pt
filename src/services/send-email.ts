@@ -1,3 +1,4 @@
+import { CONSTANTS } from "@/util/constants";
 import { Resend } from "resend";
 
 const resendApiKey = process.env.RESEND_API_KEY || "";
@@ -13,7 +14,7 @@ export const SendEmail = async ({ name = "", telephone }: Client) => {
   console.log(name);
   const { data, error } = await resend.emails.send({
     from: "Aderir Pacotes NOS <contato@aderirpacotesnos.com>",
-    to: ["pacotesinternetfibra@gmail.com"],
+    to: [CONSTANTS.email],
     subject: "Novo Cliente",
     html: `${
       name && `<strong>Nome: </strong>${name} <br />`

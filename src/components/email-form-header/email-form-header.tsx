@@ -2,7 +2,7 @@ import styles from "@/components/email-form-header/email-form-header.module.css"
 import { redirect } from "next/navigation";
 import { SendEmail } from "@/services/send-email";
 import { SubmitButton } from "@/components/submit-button/submit-button";
-import { SendTelegramMessage } from '@/services/send-message-telegram';
+import { SendTelegramMessage } from "@/services/send-message-telegram";
 
 export const EmailFormHeader = () => {
   async function handleSendEmail(formData: FormData) {
@@ -11,7 +11,7 @@ export const EmailFormHeader = () => {
     const name = formData.get("name");
     const telephone = formData.get("telephone");
 
-    await SendTelegramMessage({
+    await SendEmail({
       name: String(name),
       telephone: String(telephone),
     });
