@@ -12,7 +12,7 @@ export const EmailForm = ({ showMessage = true, aderir = false }) => {
     const name = formData.get("name");
     const telephone = formData.get("telephone");
 
-    await SendEmail({
+    await SendTelegramMessage({
       name: String(name),
       telephone: String(telephone),
     });
