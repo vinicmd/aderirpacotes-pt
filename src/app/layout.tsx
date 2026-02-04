@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { showNOSName } from "@/util/showNOSName";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
@@ -48,6 +49,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-pt">
+      <GoogleAnalytics gaId="AW-11027087416" />
       <body className={`${roboto.className}`}>{children}</body>
     </html>
   );
