@@ -2,11 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import styles from "./header.module.css";
-import { PriceBox } from "../price-box/price-box";
 import { showNOSName } from "@/util/showNOSName";
 import { FormHeader } from "../formHeader/formHeader";
-import { CONSTANTS } from "@/util/constants";
-import { formatTelephone } from "@/util/format-telephone";
 import { Phone } from "../phone/phone";
 
 export const Header = ({ isComplete = true }) => {

@@ -1,5 +1,4 @@
 import styles from "@/components/email-form/email-form.module.css";
-import { SendEmail } from "@/services/send-email";
 import { redirect } from "next/navigation";
 import { showNOSName } from "@/util/showNOSName";
 import { SubmitButton } from "../submit-button/submit-button";
